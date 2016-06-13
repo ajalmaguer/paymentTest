@@ -14,7 +14,7 @@
     <h3>Whoops! Something went wrong.</h3>
     <h5>Reference Number: {{vm.isArray() ? vm.searchObject.UMrefNum[vm.searchObject.UMrefNum.length-1]:vm.searchObject.UMrefNum}}</h5>
     <p class="red-text">
-      {{vm.searchObject.UMerror}}
+      {{vm.isArray() ? vm.searchObject.UMerror[vm.searchObject.UMerror.length-1]:vm.searchObject.UMerror}}
     </p>
     <p>
       <a href="javascript:window.print()">Print this page</a> for your records.
