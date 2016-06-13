@@ -1,0 +1,28 @@
+
+
+.nav-wrapper {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.project {
+  opacity: 0;
+}
+
+.project .description {
+  margin-bottom: 30px;
+}
+
+.chip {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.btn-floating {
+  margin-bottom: 15px;
+}
+
+footer {
+  opacity: 0;
+}
+

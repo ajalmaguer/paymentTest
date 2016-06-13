@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="portfolio">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>AJ Almaguer</title>
+
+  <!-- CSS  -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+
+
+  <!-- Vendor JS -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
+</head>
+<body ng-controller="MainController as vm">
+
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+  <nav class="light-blue darken-4" role="navigation">
+    <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">AJ Almaguer</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="#">About</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  </div>
+
+  <div class='container'>
+    <form action="https://sandbox.usaepay.com/gate.php" method="POST">
+    <input type="hidden" name="UMkey" value="_P3XkA8G8c50wQl1xOVN087L9b3jKtk2">
+    <input type="hidden" name="UMredir" value="">
+    <input type="hidden" name="UMinvoice" value="1234">
+    <input type="hidden" name="UMamount" value="1.00">
+    Full Name: <input type="text" name="UMname"><br>
+    Street: <input type="text" name="UMstreet"><br>
+    City: <input type="text" name="city"><br>
+    State: <input type="text" name="state"><br>
+    Zip: <input type="text" name="UMzip"><br>
+    <br>
+    <br>
+    Credit Card Info:<br>
+    Card Type: <select name=cardtype>
+    <option>Visa <option>Mastercard <option>Amex</select><br>
+    Card Number: <input type=text name=UMcard><br>
+    Expiration: <input type=text name=UMexpir><br>
+    Name On Card: <input type=text name=UMname><br>
+    <br>
+    <br>
+    <input type=submit value="Place Order">
+    </form>
+  </div>
+
+
+  <!-- Stuff to buy -->
+  <div class="" >
+    <br>
+
+    <div class="row">
+     <div class="col s12 m3">
+       <div class="card">
+         <div class="card-image">
+           <img src="http://materializecss.com/images/sample-1.jpg">
+           <span class="card-title">Card Title</span>
+         </div>
+         <div class="card-content">
+           <p>I am a very simple card. I am good at containing small bits of information.
+           I am convenient because I require little markup to use effectively.</p>
+         </div>
+         <div class="card-action">
+           <a href="#">This is a link</a>
+         </div>
+       </div>
+     </div>
+   </div>
+
+  </div>
+
+
+  <footer class="page-footer orange center-align" id="contact">
+
+    <a href="mailto:ajalmaguer@gmail.com" target="_blank" class="btn-floating light-blue darken-3"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="https://github.com/ajalmaguer" target="_blank" class="btn-floating light-blue darken-3"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/ajalmaguer" target="_blank" class="btn-floating light-blue darken-3"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+
+    <div class="footer-copyright">
+      © 2016 AJ Almaguer
+    </div>
+  </footer>
+
+
+  <!--  My JS -->
+  <script src="js/init.js"></script>
+  <script src="js/app.js"></script>
+
+  </body>
+</html>
