@@ -2,17 +2,17 @@
 
   <a ui-sref="home" class="right">Back to home page</a>
 
-  <div ng-show="vm.searchObject.UMstatus == 'Approved' || vm.searchObject.UMstatus[0] == 'Approved' || vm.searchObject.UMstatus[vm.searchObject.length] == 'Approved'">
+  <div ng-show="vm.searchObject.UMstatus == 'Approved' || vm.searchObject.UMstatus[vm.searchObject.UMstatus.length-1] == 'Approved'">
     <h3>Thank you for your Order!</h3>
-    <h5>Your order number is: {{vm.searchObject.UMrefNum}}</h5>
+    <h5>Your order number is: {{vm.isArray() ? vm.searchObject.UMrefNum[vm.searchObject.UMrefNum.length-1]:vm.searchObject.UMrefNum}}</h5>
     <p>
       <a href="javascript:window.print()">Print this page</a> for your records.
     </p>
   </div>
 
-  <div ng-hide="vm.searchObject.UMstatus == 'Approved' || vm.searchObject.UMstatus[0] == 'Approved' || vm.searchObject.UMstatus[vm.searchObject.length] == 'Approved'">
+  <div ng-hide="vm.searchObject.UMstatus == 'Approved' || vm.searchObject.UMstatus[vm.searchObject.UMstatus.length-1] == 'Approved'">
     <h3>Whoops! Something went wrong.</h3>
-    <h5>Reference Number: {{vm.searchObject.UMrefNum}}</h5>
+    <h5>Reference Number: {{vm.isArray() ? vm.searchObject.UMrefNum[vm.searchObject.UMrefNum.length-1]:vm.searchObject.UMrefNum}}</h5>
     <p class="red-text">
       {{vm.searchObject.UMerror}}
     </p>

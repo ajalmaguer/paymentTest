@@ -29,6 +29,14 @@
     vm.absUrl = $location.absUrl()
     vm.searchObject = $location.search()
     console.log(vm.searchObject)
+
+    vm.isArray = isArray
+
+    function isArray() {
+      return typeof vm.searchObject.UMrefNum == "object"
+    }
+
+    console.log(vm.isArray())
   }
 
 })()
