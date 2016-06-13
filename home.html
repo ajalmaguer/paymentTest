@@ -1,0 +1,39 @@
+
+
+<div class="row">
+  <div class="col s12 m6 push-m3">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://thingd-media-ec3.thefancy.com/default/609452057761422274_ef776f4bbc16.gif">
+      </div>
+      <div class="card-content">
+        <span class="card-title grey-text text-darken-4"><strong>Omnibot! Mip Two-Wheeled Robot</strong></span>
+      </div>
+      <div class="card-action">
+       <button class="btn light-blue darken-3 activator waves-effect waves-block waves-light">Buy: $175.00</button>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Omnibot! Mip Two-Wheeled Robot<i class="material-icons right">close</i></span>
+        <p><strong>$175.00</strong></p>
+        <form action="https://sandbox.usaepay.com/gate.php" method="POST">
+          <input type="hidden" name="UMkey" value="_P3XkA8G8c50wQl1xOVN087L9b3jKtk2">
+          <input type="hidden" name="UMredir" value="{{vm.absUrl}}receipt/">
+          <input type="hidden" name="UMinvoice" value="1234">
+          <input type="hidden" name="UMamount" value="175.00">
+          <!-- Full Name: <input type="text" name="UMname"><br>
+          Street: <input type="text" name="UMstreet"><br>
+          City: <input type="text" name="city"><br>
+          State: <input type="text" name="state"><br>
+          Zip: <input type="text" name="UMzip"><br> -->
+          <br>
+          Name On Card: <input type=text name=UMname><br>
+          Card Type: <select name=cardtype class="browser-default">
+          <option>Visa <option>Mastercard <option>Amex</select><br>
+          Card Number: <input type=text name=UMcard><br>
+          Expiration: <input type=text name=UMexpir><br>
+          <input class="btn green" type=submit value="Place Order">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
